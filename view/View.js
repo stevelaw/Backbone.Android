@@ -6,10 +6,12 @@
 	// Backbone.Android.View
 	// ----------------------
 	var View = Backbone.Android.View = function(options) {
+		// Call Backbone.View constructor function with this object as the
+		// context.  This allows us to extend a Backbone.View with our own 
+		// functionality
 		Backbone.View.prototype.constructor.apply(this, arguments);
 	};
 	
-	// An activity is an extension of a Backbone View
 	View.prototype = new Backbone.View();
 	
 }(Backbone, _));

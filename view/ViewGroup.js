@@ -6,6 +6,9 @@
 	// Backbone.Android.ViewGroup
 	// --------------------------
 	var ViewGroup = Backbone.Android.ViewGroup = function(options) {
+		// Call Backbone.View constructor function with this object as the
+		// context.  This allows us to extend a Backbone.View with our own 
+		// functionality
 		Backbone.View.prototype.constructor.apply(this, arguments);
 						
 		this.addView = function(view) {
@@ -13,7 +16,6 @@
 		}
 	};
 	
-	// An activity is an extension of a Backbone View
 	ViewGroup.prototype = new Backbone.View();
 	
 }(Backbone, _));

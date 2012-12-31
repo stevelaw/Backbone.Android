@@ -17,6 +17,9 @@
 	// Backbone.Android.Activity
 	// -------------------------
 	var Activity = Backbone.Android.Activity = function(options) {
+		// Call Backbone.View constructor function with this object as the
+		// context.  This allows us to extend a Backbone.View with our own 
+		// functionality
         Backbone.View.prototype.constructor.apply(this, arguments);
         
         // Setup lifecycle methods - provide defaults where no method is 
