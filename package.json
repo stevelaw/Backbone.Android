@@ -1,0 +1,21 @@
+{
+	"name": "Backbone.Android",
+	"version": "0.0.1",
+	"author": "",
+	"description": "",
+	"contributors": [ 
+		{ "name": "Steve Lawson", "email": "stevelaw23@gmail.com" } 
+	],
+	
+	"scripts": {
+		"preinstall": "npm i -g lumbar"
+	},
+  
+	"dependencies" : {	
+		"underscore": "*",
+		"backbone": "*",
+		"async": "*",	
+		"handlebars": "*"
+	},
+	"license": ""
+}

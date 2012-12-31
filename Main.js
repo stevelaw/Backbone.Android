@@ -1,0 +1,1 @@
+var testActivity = new Backbone.Android.Activity();
